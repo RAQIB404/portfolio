@@ -1,0 +1,361 @@
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+.font{
+    background-color: var(--dark);
+    width: 100%;
+    height: 150vh;
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 90%,0 100%);
+}
+
+ .container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin:0 auto;
+} 
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right:2rem;
+    text-transform: uppercase;
+} 
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    right:-169px;
+}
+
+.btn-primary{
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+.btn-primary:hover {
+background: transparent;
+border-color: var(--primary);
+color:var(--pure) ;
+}
+.hero{
+    padding: 3rem 0;
+}
+.hero .left img{
+    width:150px;
+    margin-top: -57px;
+}
+
+.hero .right{
+    color:var(--pure);
+}
+
+.hero .right h4{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom:0.5rem ;
+    margin-left: 157px;
+    margin-top: -249px;
+}
+
+.hero .right h1{
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    margin-left: 143px;
+}
+
+.hero .right h1 span{
+    color:var(--primary);
+}
+ .hero .right p{
+    line-height: 1.9;
+    margin-bottom:3rem;
+    color: var(--pure);
+} 
+.im {
+    color: var(--pure);
+    position: relative;
+    top: 171px;
+}
+.btn-secondary{
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+    position: relative;
+    top:194px;
+    right:-40px;
+}
+
+.btn-secondary:hover{
+    background:var(--primary);
+    color:var(--secondary)
+}
+
+.flex-1{
+    flex:1;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.hero .right{
+    margin-top: -7rem;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section.about .about-me-img{
+    height: 288px;
+    position: relative;
+    right: -60px;
+    top: -61px;
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-left: 114px;
+}
+
+section.about h1 span{
+    color:var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.about p{
+    color: var(--ternary);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+section.about .social{
+    display: flex;
+}
+
+section.about .social a{
+    background:var(--light) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+section.about .social a:hover{
+    background: var(--primary);
+}
+section.about .social a img{
+    width:100%;
+    height: 100%;
+    padding:0.5rem;
+}
+
+.skills{
+    background-color: rgb(83, 228, 213);
+    width:100%;
+    bottom: 30px;
+    padding-top: 10px;
+    color:var(--pure);
+    line-height: 1.9;
+    padding-left: 30px;
+}
+.skills ul{
+    color:rgb(136, 134, 134);
+}
+.project{
+    background-color: rgb(150, 236, 228);
+    width: 100%;
+    bottom: 30px;
+    text-decoration: none;
+    padding-top: 10px;
+    line-height: 1.9;
+    color: var(--light);
+    padding-left: 30px
+}
+.project ul a{
+    text-decoration: none;
+    color:rgb(136, 134, 134);
+}
+.contact{
+    background-color: rgb(190, 236, 232);
+    width: 100%;
+    bottom: 30px;
+    text-decoration: none;
+    padding-top: 10px;
+    color:var(--pure);
+    line-height: 1.9;
+    padding-left: 30px
+}
+.contact ul{
+    color:rgb(136, 134, 134);
+}
+.both{
+    margin-top: -171px;
+}
+ @media(min-width:1024px){
+    header{
+       height: 160vh;
+    }
+    .flex-1{
+        margin-right: 40px;
+    }
+    .flex{
+        display: flex;
+    }
+    
+    .items-center{
+        align-items: center;
+    }
+    
+    .justify-between{
+        justify-content:space-between;
+    }
+    
+    header nav{
+        padding: 2rem 0;
+    }
+    
+    header nav .branding{
+        margin-right: 3rem;
+    }
+    
+    .hero{
+        padding: 3rem 0;
+    }
+    .hero .left img{
+        width:400px;
+    }
+    
+    .hero .right h4{
+        margin-bottom:0.5rem ;
+    }
+    
+    .hero .right h1{
+        font-size: 4rem;
+    }
+    
+    .hero .right h1 span{
+        color:var(--primary);
+    }
+    
+    .hero .right p{
+        line-height: 1.9;
+        margin-bottom: 2rem;
+    }
+    .btn-primary{
+        position: inherit;
+    }
+    .btn-secondary{
+        position: relative;
+        top: 108px;
+        right: -71px;
+        width: 220px;
+    }
+    .im {
+        font-size: 1.5rem;
+        position: relative;
+        top: 10px;
+    }
+    section.about p{
+        padding-left: 67px;
+    }
+    section.about .social{
+        padding-left: 61px;
+    }
+    .flex-1{
+        flex:1;
+    }
+    
+    .justify-center{
+        justify-content: center;
+    }
+    
+    .hero .right{
+        margin-top: -7rem;
+    }
+    section{
+        padding: 6rem 0;
+    }
+    
+    section.about .about-me-img{
+        height: 450px;
+    }
+    .skills{
+        width: 30%;
+        position:relative;
+        left:100px ;
+        bottom: 30px;
+        padding-left: 60px;
+    }
+    .project{
+        width: 30%;
+        position:relative;
+        left:100px ;
+        bottom: 30px;
+    }
+    .contact{
+        width: 30%;
+        position:relative;
+        left:100px ;
+        bottom: 30px;
+    }
+    .both{
+        display: flex;
+        font-family: 'Poppins', sans-serif;
+        justify-content: space-evenly;
+        padding-right: 150px;
+        margin-top: -138px;
+    }
+} 
